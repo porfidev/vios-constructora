@@ -1,0 +1,22 @@
+
+
+
+.header-background,.header-background::after{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+}
+.header-background::after {
+    content: "";
+    background-image: linear-gradient(0deg,#212529 40%,
+    rgba(33,37,41,.9) 100%,
+    rgba(33,37,41,.85) 100%), url('/image/b2-1.jpg');
+    z-index: 0;
+}
+
+
+
+
