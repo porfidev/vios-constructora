@@ -1,59 +1,61 @@
-
-
-
-.header-background,.header-background::after{
-    position: absolute;
-    top: 0;
-    height: 450px;
-    left: 0;
-    right: 0;
+.header-background,
+.header-background::after {
+  position: absolute;
+  top: 0;
+  height: 450px;
+  left: 0;
+  right: 0;
 }
 .header-background::after {
-    content: "";
-    background-image: linear-gradient(0deg,#212529 40%,
-    rgba(33,37,41,.9) 100%,
-    rgba(33,37,41,.85) 100%), url('/image/b2-1.jpg');
-    z-index: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  content: "";
+  background-image: linear-gradient(
+      0deg,
+      #212529 40%,
+      rgba(33, 37, 41, 0.9) 100%,
+      rgba(33, 37, 41, 0.85) 100%
+    ),
+    url("/image/b2-1.jpg");
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.footer-background,.footer-background::after{
-    position: absolute;
-    bottom: 0;
-    height: 400px;
-    left: 0;
-    right: 0;
+.footer-background,
+.footer-background::after {
+  position: absolute;
+  bottom: 0;
+  height: 400px;
+  left: 0;
+  right: 0;
 }
 
-
-.footer-background,.header-background {
-    content: "";
-    background-image: linear-gradient(0deg,#212529 -300%,
-    rgba(33,37,41,.9) 800%,
-    rgba(33,37,41,.85) 100%), url('/image/b1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: -1;
-
+.footer-background,
+.header-background {
+  content: "";
+  background-image: linear-gradient(
+      0deg,
+      #212529 -300%,
+      rgba(33, 37, 41, 0.9) 800%,
+      rgba(33, 37, 41, 0.85) 100%
+    ),
+    url("/image/b1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
 }
 
-.wrapper{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    background-color: transparent;
-    height: 200px;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  background-color: transparent;
+  height: 200px;
 }
 
 .content {
-    background-color: transparent;
-    height: 200px;
-    flex: 1;
-    max-width: 400px;
+  background-color: transparent;
+  height: 200px;
+  flex: 1;
+  max-width: 400px;
 }
-
-
-
