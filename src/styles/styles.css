@@ -50,14 +50,13 @@
   justify-content: center;
   margin-top: 40px;
   background-color: transparent;
-  height: 300px;
+  min-height: 300px;
 }
 
 .content {
-  background-color: transparent;
-  height: 200px;
+  display: flex;
   flex: 1;
-  max-width: 400px;
+  max-width: 1140px;
 }
 
 .capaTex {

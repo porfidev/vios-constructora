@@ -1,0 +1,115 @@
+---
+import Layout from "../layouts/Layout.astro";
+import flechita from "../../public/icons/arrow.right.svg";
+---
+
+<Layout title="Pruebas de Concepto">
+  <div class="card-wrapper">
+    <img src="https://placehold.co/1800x1350" />
+    <div class="wrapper">
+      <div class="description">
+        <span>GET TO KNOW US</span>
+      </div>
+
+      <div class="description-title">
+        <h1>ABOUT ACRINO</h1>
+      </div>
+
+      <div class="text-content">
+        <p>
+          Sale sanctus atomorum qui id, eu nec scaevola laboramus tincidunt, eos
+          iusto delicata maiestatis ut. Id fabulas instructior mel, molestie
+          explicari vel ea, et posse regione pri. Graeci vivendum an has, ea
+          tollit recusabo urbanitas cum.
+        </p>
+        <p>
+          Vim at augue facilisi salutatus, mei alia tincidunt ei, at his diam
+          doctus. Dicit tacimates eos ei. Et habeo nobis appareat quo. Eum an
+          causae adipisci disputationi, et qui tota praesent persequeris.
+        </p>
+      </div>
+
+      <div class="button-wrapper">
+        <a href="#">
+          READ MORE
+          <img src={flechita.src} width={12} height={12} alt="icono flechita" />
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style lang="scss">
+  :root {
+    --bg-color: rgb(33, 37, 41);
+    --emphasis-text-color: rgb(164, 135, 110);
+    --text-color: rgb(255, 255, 255);
+  }
+
+  .card-wrapper {
+    flex: 1;
+    height: 600px;
+    background-color: red;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+
+    & > img {
+      padding-left: 30%;
+    }
+  }
+
+  .wrapper {
+    position: absolute;
+    background-color: var(--bg-color);
+    width: 45%;
+    padding: 2rem;
+    left: 0;
+    top: 4.5rem;
+  }
+
+  .description {
+    span {
+      color: var(--emphasis-text-color);
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  .description-title {
+    h1 {
+      color: var(--text-color);
+      margin-top: 0;
+      font-family: "Oswald", sans-serif;
+      font-weight: 400;
+      font-size: 2rem;
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  .text-content {
+    p {
+      color: var(--text-color);
+      font-family: "Didact Gothic", serif;
+      font-size: 1rem;
+    }
+
+    padding-bottom: 2rem;
+  }
+
+  .button-wrapper {
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: 0;
+      color: var(--text-color);
+      background-color: var(--emphasis-text-color);
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      width: 10rem;
+    }
+  }
+</style>

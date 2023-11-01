@@ -89,6 +89,12 @@ const { title } = Astro.props;
     );
   }
 
+  *,
+  *:before,
+  *:after {
+      box-sizing: border-box;
+  }
+
   html {
     font-family: system-ui, sans-serif;
     background: #13151a;
