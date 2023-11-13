@@ -1,0 +1,138 @@
+---
+import facebookIcon from "../../public/icons/facebook.svg";
+import instagramIcon from "../../public/icons/instagram.svg";
+import xIcon from "../../public/icons/x.svg";
+---
+
+<div class="footer-copy-terms">
+  <div class="copy">
+    <div>
+      <p>© 2018 - <span id="currentYear"></span> VIOS Constructora.</p>
+    </div>
+
+    <div class="social">
+      <a href="#">
+        <img src={facebookIcon.src} width={16} height={16} alt="facebook" />
+      </a>
+      <a href="#">
+        <img src={instagramIcon.src} width={16} height={16} alt="instagram" />
+      </a>
+      <a href="#">
+        <img src={xIcon.src} width={16} height={16} alt="X" />
+      </a>
+    </div>
+
+    <div class="terms">
+      <a href="#">
+        <span>Términos y Condiciones</span>
+      </a>
+      <a href="#">
+        <span>Política de Privacidad</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="developed">
+    <p>
+      Desarrollador por <a href="#">Esme</a> y <a href="#">porfi.dev</a>
+    </p>
+  </div>
+</div>
+
+<style lang="scss">
+  @use "../styles/media-queries" as *;
+
+  .footer-copy-terms {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .copy {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      p, span {
+        font-family: "Didact Gothic", sans-serif;
+        font-size: 1rem;
+        color: var(--footer-text-color);
+      }
+
+      @include phone {
+        flex-direction: column;
+      }
+
+      div {
+        flex: 1;
+        @include phone {
+          p {
+            text-align: center;
+          }
+        }
+      }
+
+      .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          margin-right: 0.3rem;
+          margin-left: 0.3rem;
+
+          @include phone {
+            padding: 0.5rem;
+          }
+        }
+      }
+
+      .terms {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        @include phone {
+          flex-direction: column;
+        }
+
+        a:first-child {
+          margin-right: 1rem;
+
+          @include phone {
+            margin-right: 0;
+            padding: 0.5rem;
+          }
+        }
+
+        a {
+          color: var(--footer-text-color);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .developed {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      font-size: 0.8rem;
+
+      p {
+        font-family: "Didact Gothic", sans-serif;
+        font-size: 1rem;
+        color: var(--footer-text-color);
+      }
+
+      a {
+        color: var(--footer-text-color);
+      }
+    }
+  }
+</style>
+
+<script>
+  import { getAndReplaceCurrentYear } from "../scripts/getAndReplaceCurrentYear";
+  getAndReplaceCurrentYear("#currentYear");
+</script>
