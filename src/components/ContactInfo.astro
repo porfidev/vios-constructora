@@ -1,0 +1,61 @@
+---
+
+---
+
+<div class="contact-info">
+  <div class="title">
+    <h1>Información de contacto</h1>
+  </div>
+  <div class="content">
+    <p>
+      Cerrada Lerdo de Tejada No.7, <br>
+      Col. Independencia 2A sección, C.P. 54409,<br>
+      Nicolás Romero, Estado de México.
+    </p>
+    <p><a href="tel:55-58-01-34-63">(+52) 55 58 01 34 63</a></p>
+    <p>
+      <a href="mailto:contacto@viosconstructora.com"
+        >contacto@viosconstructora.com</a
+      >
+    </p>
+  </div>
+</div>
+
+<style lang="scss">
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    .title {
+      display: flex;
+
+      h1 {
+        font-size: 1.5rem;
+        color: var(--header-text-color);
+        font-family: "Didact Gothic", sans-serif;
+      }
+    }
+
+    .content,
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .content {
+      p {
+        text-align: center;
+        margin: 0.5rem 0;
+        color: var(--footer-text-color);
+      }
+
+      a {
+        color: var(--footer-text-color);
+        text-decoration: none;
+      }
+    }
+  }
+</style>
