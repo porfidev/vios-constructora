@@ -1,0 +1,40 @@
+---
+import rightArrowIcon from "../../public/icons/arrow.right.svg";
+
+interface Props {
+  label: string;
+  link: string;
+  alt?: string;
+}
+
+const { label, link, alt = "link" } = Astro.props;
+---
+
+<div class="link-button">
+  <a href={link}>
+    <span class="label">{label}</span>
+    <img src={rightArrowIcon.src} width={12} height={12} alt={alt} />
+  </a>
+</div>
+
+<style lang="scss">
+  .label {
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+  }
+
+  .link-button {
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: 0;
+      color: var(--button-label-color);
+      background-color: var(--button-bg-color);
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      min-width: 10rem;
+    }
+  }
+</style>
