@@ -4,12 +4,74 @@ import "../styles/styles.css";
 import flechita from "../../public/icons/arrow.right.svg";
 import DescriptionContent from "../components/DescriptionContent.astro";
 import Footer from "../components/Footer.astro";
+import contact from "../components/contact.astro";
 import DescriptionProject from "../components/DescriptionProject.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 ---
 
 <Layout title="Vios Constructora 2023">
-  <div class="header-background"></div>
+  <!-- haciendo pruebas con lo del  menú-->
+  <div class="header-background">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+<div  class="conteiner" style="background-color: gray">
+  <ul class="navbar-nav flex-grow-1 ff-h fw-light ls-1 justify-content-end">
+    <li class="nav-item me-3">
+      <a class="nav-link text-uppercase pt-3 pb-3 pt-lg-4 pb-lg-4 active" aria-current="page" href="index.html">Vios Constructora</a>
+    </li >
+    <li class="nav-item me-3">
+      <a class="nav-link text-uppercase pt-3 pb-3 pt-lg-4 pb-lg-4" href="home.html">Home</a>
+    </li>
+    <li class="nav-item me-3">
+      <a class="nav-link text-uppercase pt-3 pb-3 pt-lg-4 pb-lg-4" href="service.html">Service</a>
+    </li>
+    <li class="nav-item me-3">
+      <a class="nav-link text-uppercase pt-3 pb-3 pt-lg-4 pb-lg-4" href="DescriptionProject.html">Proyect</a>
+    </li>
+    <li class="nav-item me-3">
+      <a class="nav-link text-uppercase pt-3 pb-3 pt-lg-4 pb-lg-4" href="Blog.html">Blog</a>
+    </li>
+    <li class="nav-item me-3">
+      <a class="nav-link text-uppercase pt-3 pb-3 pt-lg-4 pb-lg-4" href="contact.html">Contact</a>
+    </li>
+
+  </ul>
+</div>
+  <!-- fin de pruebas   menú-->
 
   <div class="wrapper">
     <div class="content">
