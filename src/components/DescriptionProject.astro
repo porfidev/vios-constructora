@@ -1,0 +1,94 @@
+---
+
+---
+
+<div class="description-project">
+  <a>
+    <img src="https://placehold.co/800x533" />
+    <div class="inner-wrapper">
+      <div class="description">
+        <p>Design 1 day ago</p>
+      </div>
+
+      <div class="description-title">
+        <h3 style="text-align:center">
+          Cetero torquatos no vim in usu docendi alienum
+        </h3>
+      </div>
+
+      <div class="text-content">
+        <p style="text-align:center">
+          Facilis corrumpit dignissim ei pri, ut ese novum fabellas qui. Quando
+          audure vim ei. Tamquam comprehensam qui eu, at mel splendide
+          deterruisset.
+        </p>
+      </div>
+    </div>
+  </a>
+</div>
+
+<style lang="scss">
+  .description-project {
+    a {
+      display: flex;
+      flex-direction: column;
+      border: 0;
+      text-decoration: none;
+      position: relative;
+
+      img {
+        flex: 1;
+        max-width: 100%;
+      }
+
+      .inner-wrapper {
+        position: absolute;
+        top: 90%;
+        left: 5%;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        padding: 2rem;
+        height: 340px;
+
+        .description {
+          p {
+            color: var(--legend-text-color);
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            font-size: 1rem;
+            margin: 1rem 0;
+            letter-spacing: 0.2rem;
+            text-align: center;
+          }
+        }
+
+        .description-title {
+          h3 {
+            color: var(--text-color);
+            margin-top: 0;
+            font-family: "Oswald", sans-serif;
+            font-weight: 300;
+            font-size: 1.24rem;
+            letter-spacing: 0.15rem;
+            margin-left: 0;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+
+        .text-content {
+          p {
+            color: var(--text-color);
+            font-family: "Didact Gothic", serif;
+            font-size: 1rem;
+            margin-left: 0;
+          }
+
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+</style>

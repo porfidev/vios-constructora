@@ -4,6 +4,8 @@ import "../styles/styles.css";
 import flechita from "../../public/icons/arrow.right.svg";
 import DescriptionContent from "../components/DescriptionContent.astro";
 import Footer from "../components/Footer.astro";
+import DescriptionProject from "../components/DescriptionProject.astro";
+import SectionHeader from "../components/SectionHeader.astro";
 ---
 
 <Layout title="Vios Constructora 2023">
@@ -32,8 +34,15 @@ import Footer from "../components/Footer.astro";
   </div>
 
   <div class="wrapper">
-    <div class="content">
-      <DescriptionContent />
+    <div class="content" style="flex-direction: column">
+      <SectionHeader subtitle="visita" title="nuestros proyectos" />
+      <div class="grid-flow">
+        <DescriptionProject />
+
+        <DescriptionProject />
+
+        <DescriptionProject />
+      </div>
     </div>
   </div>
 
@@ -41,4 +50,13 @@ import Footer from "../components/Footer.astro";
   <div class="footer-background"></div>
 </Layout>
 
-<style></style>
+<style>
+  .grid-flow {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    height: 580px;
+  }
+</style>
